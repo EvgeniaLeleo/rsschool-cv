@@ -40,12 +40,12 @@ In the future, I see myself as a confident and experienced Frontend developer, a
 array = [[1,2,3],
          [8,9,4],
          [7,6,5]]
-snail(array) #=> [1,2,3,4,5,6,7,8,9]```
+snail(array) #=> [1,2,3,4,5,6,7,8,9]
+```
+
 *The idea is not sort the elements from the lowest value to the highest; the idea is to traverse the 2-d array in a clockwise snailshell pattern.*
 
 ### My code:
-
-````
 
 const snail = function (array) {
 let result = [];
@@ -80,7 +80,6 @@ return result;
 
 ```
 
-
 ## Courses
 * **Frontend developer** on [SkyPro](https://sky.pro/courses/programming/frontend) (in progress)
 
@@ -108,3 +107,4 @@ return result;
 * **Russian** - Native
 * **English - B2/C1** Upper intermediate/Advanced according to the [Common European Framework of Reference](https://www.efset.org/cefr/?cid=em100a) (online test at [www.efset.org](https://www.efset.org/))
 ```
+````
