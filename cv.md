@@ -37,25 +37,25 @@ In the future, I see myself as a confident and experienced Frontend developer, a
 **Snail Sort from CODEWARS:** _Given an n x n array, return the array elements arranged from outermost elements to the middle element, traveling clockwise._
 
 ````
-array = [[1,2,3],
+  array = [[1,2,3],
          [8,9,4],
          [7,6,5]]
-snail(array) #=> [1,2,3,4,5,6,7,8,9]
+  snail(array) #=> [1,2,3,4,5,6,7,8,9]
 ```
 
 *The idea is not sort the elements from the lowest value to the highest; the idea is to traverse the 2-d array in a clockwise snailshell pattern.*
 
 ### My code:
 
-const snail = function (array) {
-let result = [];
-let n = array[0].length;
-let iter = Math.floor(n / 2);
+  const snail = function (array) {
+  let result = [];
+  let n = array[0].length;
+  let iter = Math.floor(n / 2);
 
-for (let k = 0; k < iter; k++) {
-for (let j = k; j < n - k; j++) {
-result.push(array[k][j]);
-}
+  for (let k = 0; k < iter; k++) {
+  for (let j = k; j < n - k; j++) {
+  result.push(array[k][j]);
+  }
 
     for (let i = 1 + k; i < n - k; i++) {
       result.push(array[i][n - 1 - k]);
@@ -69,14 +69,14 @@ result.push(array[k][j]);
       result.push(array[i][k]);
     }
 
-}
+  }
 
-if (n % 2) {
-result.push(array[iter][iter]);
-}
+  if (n % 2) {
+  result.push(array[iter][iter]);
+  }
 
-return result;
-};
+  return result;
+  };
 
 ```
 
