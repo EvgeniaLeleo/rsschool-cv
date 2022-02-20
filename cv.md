@@ -36,26 +36,27 @@ In the future, I see myself as a confident and experienced Frontend developer, a
 
 **Snail Sort from CODEWARS:** _Given an n x n array, return the array elements arranged from outermost elements to the middle element, traveling clockwise._
 
-````
-  array = [[1,2,3],
+```
+array = [[1,2,3],
          [8,9,4],
-         [7,6,5]]
-  snail(array) #=> [1,2,3,4,5,6,7,8,9]
+        [7,6,5]]
+snail(array) #=> [1,2,3,4,5,6,7,8,9]
 ```
 
-*The idea is not sort the elements from the lowest value to the highest; the idea is to traverse the 2-d array in a clockwise snailshell pattern.*
+_The idea is not sort the elements from the lowest value to the highest; the idea is to traverse the 2-d array in a clockwise snailshell pattern._
 
 ### My code:
 
-  const snail = function (array) {
+```
+const snail = function (array) {
   let result = [];
   let n = array[0].length;
   let iter = Math.floor(n / 2);
 
   for (let k = 0; k < iter; k++) {
-  for (let j = k; j < n - k; j++) {
-  result.push(array[k][j]);
-  }
+    for (let j = k; j < n - k; j++) {
+      result.push(array[k][j]);
+    }
 
     for (let i = 1 + k; i < n - k; i++) {
       result.push(array[i][n - 1 - k]);
@@ -68,43 +69,46 @@ In the future, I see myself as a confident and experienced Frontend developer, a
     for (let i = n - 2 - k; i >= 1 + k; i--) {
       result.push(array[i][k]);
     }
-
   }
 
   if (n % 2) {
-  result.push(array[iter][iter]);
+    result.push(array[iter][iter]);
   }
 
   return result;
-  };
+};
 
 ```
 
 ## Courses
-* **Frontend developer** on [SkyPro](https://sky.pro/courses/programming/frontend) (in progress)
 
-* **Build Responsive Real-World Websites with HTML and CSS** on [udemy.com](https://www.udemy.com/course-dashboard-redirect/?course_id=437398) (in progress)
+- **Frontend developer** on [SkyPro](https://sky.pro/courses/programming/frontend) (in progress)
 
-* **JavaScript for beginners** on [stepik.org](https://stepik.org/course/2223) (in progress)
+- **Build Responsive Real-World Websites with HTML and CSS** on [udemy.com](https://www.udemy.com/course-dashboard-redirect/?course_id=437398) (in progress)
 
-* **Web development for beginners: HTML & CSS** on [stepik.org](https://stepik.org/course/38218)
+- **JavaScript for beginners** on [stepik.org](https://stepik.org/course/2223) (in progress)
+
+- **Web development for beginners: HTML & CSS** on [stepik.org](https://stepik.org/course/38218)
 
 ![](https://stepik.org/certificate/177f31010372671adc7a128f87bbd178a9ea08a8.png?resolution=small)
 
-* **HTML & CSS basics** on [stepik.org](https://stepik.org/course/2621)
+- **HTML & CSS basics** on [stepik.org](https://stepik.org/course/2621)
 
 ![](https://stepik.org/certificate/24142769d9e6afa1218e6ac89abf92846437666f.png?resolution=small)
 
-* **"Python generation": a course for beginners** on [stepik.org](https://stepik.org/course/58852)
+- **"Python generation": a course for beginners** on [stepik.org](https://stepik.org/course/58852)
 
 ![](https://stepik.org/certificate/f3af9c83480ebbd0e65ecfa80981da99b45009a9.png?resolution=small)
 
-* **JavaScript Manual** on [learn.javascript.ru](https://learn.javascript.ru) (in progress)
+- **JavaScript Manual** on [learn.javascript.ru](https://learn.javascript.ru) (in progress)
 
-* **RS Schools Course "JavaScript/Front-end. Stage 1"** (in progress)
+- **RS Schools Course "JavaScript/Front-end. Stage 1"** (in progress)
 
 ## Languages
-* **Russian** - Native
-* **English - B2/C1** Upper intermediate/Advanced according to the [Common European Framework of Reference](https://www.efset.org/cefr/?cid=em100a) (online test at [www.efset.org](https://www.efset.org/))
+
+- **Russian** - Native
+- **English - B2/C1** Upper intermediate/Advanced according to the [Common European Framework of Reference](https://www.efset.org/cefr/?cid=em100a) (online test at [www.efset.org](https://www.efset.org/))
+
 ```
-````
+
+```
