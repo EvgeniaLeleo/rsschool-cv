@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+/* .visually-hidden {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.h2-title {
+  font-size: 32px;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 42px;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  padding: 32px;
+  border-radius: 15px;
+  -webkit-box-shadow: 2px 7px 15px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 7px 15px rgba(0, 0, 0, 0.25);
+}
+
+.input-new-pin {
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 5px 5px;
+  margin-bottom: 8px;
+}
+
+.alert,
+.result {
+  margin-bottom: 16px;
+  height: 16px;
+  color: red;
+}
+
+.button {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 500;
+  padding: 5px 10px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+}
+
+.input-number {
+  width: 1.5rem;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 5px 5px;
+  margin-bottom: 8px;
+}
+
+.form-success {
+  height: 310px;
+  background: url('happydog.gif') no-repeat center top;
+}
+# sourceMappingURL=style.css.map */
