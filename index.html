@@ -4,9 +4,233 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>CV#2</title>
   </head>
   <body>
-    <h1>CV#2</h1>
+    <section class="center">
+      <h1>Evgenia Fedorova</h1>
+      <img class="photo" src="photo.jpg" alt="Evgenia" />
+      <h2>Contacts</h2>
+      <ul>
+        <li class="has-line-data">
+          <strong>Location:</strong> Saint-Petersburg, Russia
+        </li>
+        <li class="has-line-data">
+          <strong>GitHub:</strong>
+          <a href="https://github.com/EvgeniaLeleo " target="_blank"
+            >EvgeniaLeleo</a
+          >
+        </li>
+        <li class="has-line-data">
+          <strong>Discord:</strong> EvgeniaLeleo#4614
+        </li>
+        <li class="has-line-data">
+          <strong>Codewars:</strong>
+          <a href="https://www.codewars.com/users/EvgeniaLeleo" target="_blank"
+            >EvgeniaLeleo</a
+          >
+        </li>
+      </ul>
+
+      <h2>About Me</h2>
+      <p class="has-line-data">
+        I graduated from St. Petersburg State University, Faculty of Mathematics
+        and Mechanics, Department of Differential Equations, in 2007. Then I
+        graduated from graduate school at the same faculty.
+      </p>
+      <p class="has-line-data">
+        I’ve been working at St. Petersburg Technological University of
+        Industrial Technologies and Design, Higher School of Technology and
+        Energy, at the Department of Higher Mathematics since 2007.
+      </p>
+      <p class="has-line-data">
+        I’m a senior lecturer and I teach higher mathematics 1st and 2nd year
+        students.
+      </p>
+      <p class="has-line-data">
+        I am the author of four methodological works and five scientific papers
+        in the field of local qualitative theory of ordinary differential
+        equations.
+      </p>
+      <p class="has-line-data">
+        I want to change my profession and try something new.<br />
+        In the future, I see myself as a confident and experienced Frontend
+        developer, a sought-after specialist in my field. I want to broaden my
+        horizons and grow professionally, work with well-qualified specialists
+        and find out something new and useful every day.<br />
+        I’m used to constantly evolvilng and achieving my goals. And I’m sure I
+        can do that.
+      </p>
+      <h2>Skills</h2>
+      <ul>
+        <li class="has-line-data">HTML5</li>
+        <li class="has-line-data">CSS3 (SCSS, BEM methodology)</li>
+        <li class="has-line-data">JavaScript, Typescript (Fundamentals)</li>
+        <li class="has-line-data">VS Code</li>
+        <li class="has-line-data">LaTeX</li>
+        <li class="has-line-data">Python (basic knowledge)</li>
+      </ul>
+
+      <h2>Code Example</h2>
+      <p class="has-line-data">
+        <strong>Snail Sort from CODEWARS:</strong>
+        <em>
+          Given an n x n array, return the array elements arranged from
+          outermost elements to the middle element, traveling clockwise.
+        </em>
+      </p>
+      <pre>
+        <code class="has-line-data">
+    array = [[1,2,3],
+             [8,9,4],
+             [7,6,5]]
+    snail(array) #=&gt; [1,2,3,4,5,6,7,8,9]
+    </code></pre>
+      <p class="has-line-data">
+        <em
+          >The idea is not sort the elements from the lowest value to the
+          highest; the idea is to traverse the 2-d array in a clockwise
+          snailshell pattern.</em
+        >
+      </p>
+
+      <h3>My code:</h3>
+      <pre><code class="has-line-data">const snail = function (array) {
+      let result = [];
+      let n = array[0].length;
+      let iter = Math.floor(n / 2);
+    
+      for (let k = 0; k &lt; iter; k++) {
+        for (let j = k; j &lt; n - k; j++) {
+          result.push(array[k][j]);
+        }
+    
+        for (let i = 1 + k; i &lt; n - k; i++) {
+          result.push(array[i][n - 1 - k]);
+        }
+    
+        for (let j = n - 2 - k; j &gt;= k; j--) {
+          result.push(array[n - 1 - k][j]);
+        }
+    
+        for (let i = n - 2 - k; i &gt;= 1 + k; i--) {
+          result.push(array[i][k]);
+        }
+      }
+    
+      if (n % 2) {
+        result.push(array[iter][iter]);
+      }
+    
+      return result;
+    };
+    
+    </code></pre>
+
+      <h2>Courses</h2>
+      <ul>
+        <li class="has-line-data">
+          <strong>JavaScript/Front-end course. Stage 1</strong> at
+          <a href="https://rs.school/" target="_blank">Rolling Scopes school</a>
+          (in progress)
+        </li>
+        <li class="has-line-data">
+          <strong>JavaScript Manual</strong> on
+          <a href="https://learn.javascript.ru" target="_blank"
+            >learn.javascript.ru</a
+          >
+          (in progress)
+        </li>
+        <li class="has-line-data">
+          <strong>Web developer</strong> on
+          <a href="https://sky.pro/courses/programming/frontend" target="_blank"
+            >SkyPro</a
+          >
+          (in progress)
+        </li>
+        <li class="has-line-data">
+          <strong>
+            Build Responsive Real-World Websites with HTML and CSS
+          </strong>
+          on
+          <a
+            href="https://www.udemy.com/course-dashboard-redirect/?course_id=437398"
+            target="_blank"
+          >
+            udemy.com
+          </a>
+          <br />
+          <img
+            class="sertificate"
+            src="https://udemy-certificate.s3.amazonaws.com/image/UC-ba5c54c9-c67f-449f-b719-756ef7e96f98.jpg?v=1647090754000"
+            alt=""
+          />
+        </li>
+        <li class="has-line-data">
+          <strong>JavaScript for beginners</strong> on
+          <a href="https://stepik.org/course/2223" target="_blank"
+            >stepik.org</a
+          >
+          <br />
+          <img
+            class="sertificate"
+            src="https://stepik.org/certificate/5f48cef11f96eded3462b1d9852a699a790cf397.png?resolution=small"
+            alt=""
+          />
+        </li>
+        <li class="has-line-data">
+          <strong>Web development for beginners: HTML &amp; CSS</strong> on
+          <a href="https://stepik.org/course/38218" target="_blank"
+            >stepik.org</a
+          >
+          <br />
+          <img
+            class="sertificate"
+            src="https://stepik.org/certificate/177f31010372671adc7a128f87bbd178a9ea08a8.png?resolution=small"
+            alt=""
+          />
+        </li>
+        <li class="has-line-data">
+          <strong>HTML &amp; CSS basics</strong> on
+          <a href="https://stepik.org/course/2621" target="_blank"
+            >stepik.org</a
+          >
+          <br />
+          <img
+            class="sertificate"
+            src="https://stepik.org/certificate/24142769d9e6afa1218e6ac89abf92846437666f.png?resolution=small"
+            alt=""
+          />
+        </li>
+        <li class="has-line-data">
+          <strong>“Python generation”: a course for beginners</strong> on
+          <a href="https://stepik.org/course/58852" target="_blank"
+            >stepik.org</a
+          >
+          <br />
+
+          <img
+            class="sertificate"
+            src="https://stepik.org/certificate/f3af9c83480ebbd0e65ecfa80981da99b45009a9.png?resolution=small"
+            alt=""
+          />
+        </li>
+      </ul>
+
+      <h2>Languages</h2>
+      <ul>
+        <li class="has-line-data"><strong>Russian</strong> - Native</li>
+        <li class="has-line-data">
+          <strong>English - B2/C1</strong> Upper intermediate/Advanced according
+          to the
+          <a href="https://www.efset.org/cefr/?cid=em100a" target="_blank"
+            >Common European Framework of Reference</a
+          >
+          (online test at
+          <a href="https://www.efset.org/" target="_blank">www.efset.org</a>)
+        </li>
+      </ul>
+    </section>
   </body>
 </html>
