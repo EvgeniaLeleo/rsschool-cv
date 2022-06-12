@@ -4,6 +4,34 @@ body {
   line-height: 24px;
 }
 
+a,
+a:visited {
+  color: rgb(0, 89, 172);
+  text-decoration-color: transparent;
+  transition: all 0.3s;
+}
+
+a:hover,
+a:active {
+  color: rgb(0, 89, 172);
+  text-decoration-color: rgb(0, 89, 172);
+}
+
+.contacts__item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.codewars-badge {
+  filter: brightness(200%) saturate(30%);
+  transition: all 0.2s;
+}
+
+.codewars-badge:hover {
+  filter: brightness(100%) saturate(100%);
+}
+
 .center {
   padding-left: calc(50% - 400px);
   padding-right: calc(50% - 400px);
