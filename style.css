@@ -17,6 +17,10 @@ a:active {
   text-decoration-color: rgb(0, 89, 172);
 }
 
+.header {
+  margin-bottom: 30px;
+}
+
 .contacts__item {
   display: flex;
   align-items: center;
