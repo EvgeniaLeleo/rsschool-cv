@@ -49,6 +49,10 @@ a:active {
   border-radius: 50px;
 }
 
+.preview {
+  width: 50%;
+}
+
 .sertificate {
   width: 80%;
   margin: 0 auto;
